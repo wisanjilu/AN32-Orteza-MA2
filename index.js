@@ -1,5 +1,5 @@
 /*
-    The purpose of an invontory system is to automate 
+    The purpose of an inventory system is to automate 
     the process of logging data on a specific store, 
     usually related to its logistics.
     It helps in identifying various information, like stock levels,
@@ -40,5 +40,12 @@ console.log(`Total Inventory Value: ${totalInventoryValue}`);
 console.log(`Updated Laptop Quantity: ${products[0].quantity}`);
 console.log(`Most Expensive Product: ${mostExpensiveProduct.name}`);
 
+
 // adding a new product
 products.push({name: "Monitor", price: 20000, quantity: 10});
+
+// updating total inventory value
+totalInventoryValue += products[3].price * products[3].quantity;
+
+// displaying updated total inventory value
+console.log(`Total Inventory Value(Updated): ${totalInventoryValue}`);
